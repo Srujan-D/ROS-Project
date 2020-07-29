@@ -35,6 +35,13 @@ Now that we have our robot, environment of obstacles,path planner and controller
 
 _Credits : MathWorks_
 
+**STRUCTURE OF THE PROJECT:**
+
+1. _Obstacle detector_ node which publishes a fixed list of obstacles. Here I published the list of centre point of the cylindrical obstacles.
+2. _Planner_ node which subscribes to obstacles and publishes a path.
+3. _Controller_ node which subscribes to the path and publishes /cmd_vel. This
+controller will traverse the path one point at a time using PID Controller.
+
 **INSTRUCTIONS TO RUN THE PROJECT:**
 
 For running the codes, you have to clone the project’s [repo](), and the [Omnibase](https://github.com/ERC-BPGC/omnibase?files=1) repo. In the /scripts, there are three files or ROS nodes - pub_obs.py, path_planner.py and pid_controller.py. The pub_obs.py node publishes the centres of the given cylindrical obstacles of radius 0.25 units and height 10 units. The path_planner.py node subscribes to the above list of obstacles, plans and publishes a path for the Trotbot to move from the start point to goal point using the Rapidly Exploring Random Trees (RRT) algorithm. The pid_controller.py node subscribes to the published path, keeps track of the robot’s odometry (position and angles in the cartesian coordinate frame), thus calculating and publishing the required rotational and translational velocities of the Trotbot on /cmd_vel topic, which results in the motion of Trotbot. Follow these steps to execute the project:
