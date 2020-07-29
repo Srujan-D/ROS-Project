@@ -73,4 +73,4 @@ rosrun omnibase_control pid_controller.py
 ```
 
 And voila! You will see the Trotbot moving in the Gazebo world.
-You can see the recording of the Trotbot going from start point (0,0,0) to goal point (6,6,0), also avoiding a series of cylindrical obstacles, by playing the Screencast_Trotbot.webm file.
+You can see the recording of the Trotbot going from start point (0,0,0) to goal point (6,6,0), also avoiding a series of cylindrical obstacles, by playing the Screencast_Trotbot.webm file avilable in this repo.
