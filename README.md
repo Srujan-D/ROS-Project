@@ -1,6 +1,6 @@
 # ROS-Project
 This is a project based on path planning and control theory of robots. What this means is that I need to plan a path from the given start to goal points through a given environment using one of the path planning algorithms. I then need to create a code for a controller for the robot. This will enable the robot to traverse the path point by point to reach the goal. The environment in which my project runs, consists of a series of static obstacles, and my robot. [Trotbot](https://github.com/ERC-BPGC/Trotbot) (a model of robot) has been used to test my code. Trotbot is based on the [Omnibase](https://github.com/ERC-BPGC/omnibase?files=1) package. Both of these are developed by the [Electronics and Robotics Club, BITS Goa](https://github.com/ERC-BPGC/). 
-<img src="https://media.giphy.com/media/W07ksff8QKNmsC8Feg/giphy.gif" width="700" />
+<img src="https://github.com/Srujan-D/SocialN/blob/step_1_meal_prep/ezgif.com-gif-maker.gif" width="700" />
 
 _My project. The 4 wheeled robot is the Trotbot, surrounded by the cylindrical static obstacles. The simulation is seen using the Gazebo software._
 
