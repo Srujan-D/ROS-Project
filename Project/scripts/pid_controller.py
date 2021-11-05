@@ -151,7 +151,7 @@ class Trotbot:
                     self.Ki = 0 #0.00001  Recommended value in case PID contoller is used
                     vel_msg.linear.x = 0
                     #vel_msg.angular.z = self.calculate(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)   PID Controller
-                    vel_msg.angular.z = self.cal_easy(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)     Simple P Controller
+                    vel_msg.angular.z = self.cal_easy(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)     # Simple P Controller
                 else :
                     if(self.flag == False ):
                         vel_msg.angular.z = 0.0
@@ -180,7 +180,7 @@ class Trotbot:
                     self.Ki = 0 #0.000001 Recommended value in case PID contoller is used
                     vel_msg.angular.z = 0.0
                     #vel_msg.linear.x = self.cal_easy(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)       PID Controller
-                    vel_msg.linear.x = self.cal_easy(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)        Simple P Controller
+                    vel_msg.linear.x = self.cal_easy(self.new_y, self.new_x, self.Kp, self.Ki, self.Kd, self.feedback_value)        # Simple P Controller
                     print("===========")
                     print(vel_msg.linear.x) 
                     print("===========")           
